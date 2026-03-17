@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — Nexora Agence Digitale</title>
+  <meta name="description" content="Découvrez l'histoire de Nexora, notre équipe et nos valeurs.">
+  <meta property="og:title"       content="À propos — Nexora">
+  <meta property="og:description" content="Notre histoire, équipe et valeurs.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://c3-na-elhattab.enset.ma/tp3/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip">Aller au contenu</a>
+
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav-interieur">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <div class="nav-liens">
+        <a href="index.html">Accueil</a>
+        <a href="about.html" class="actif" aria-current="page">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-nav">Devis gratuit</a>
+      </div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-m">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-m" aria-label="Menu mobile">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero-page" aria-labelledby="h-page">
+    <nav class="fil" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a> <span aria-hidden="true">/</span>
+      <span aria-current="page">À propos</span>
+    </nav>
+    <div class="puce" style="margin:0 auto .75rem">Notre histoire</div>
+    <h1 id="h-page">À propos de Nexora</h1>
+    <p>Notre histoire, notre équipe et les valeurs qui nous animent.</p>
+  </section>
+
+  <!-- Histoire -->
+  <section class="section" aria-labelledby="h-hist">
+    <div class="conteneur">
+      <div class="g2" style="align-items:center;gap:4rem">
+        <div class="reveal">
+          <div class="puce">Depuis 2019</div>
+          <h2 id="h-hist">Née de la passion<br>pour le digital</h2>
+          <p>Nexora a été fondée par deux développeurs passionnés convaincus que les entreprises marocaines méritent des solutions numériques de niveau international.</p>
+          <p>En 5 ans, nous sommes passés de 2 à 12 collaborateurs et avons livré plus de 80 projets dans 7 secteurs différents.</p>
+          <a href="contact.html" class="btn btn-vert" style="margin-top:1.25rem">Travaillons ensemble</a>
+        </div>
+        <div class="reveal" style="transition-delay:.15s">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;border-top:2px solid var(--vert)">
+              <div style="font-family:var(--police-titre);font-size:2.8rem;color:var(--vert);font-weight:700;line-height:1">80+</div>
+              <div style="font-size:.78rem;color:var(--texte3);margin-top:.4rem">Projets livrés</div>
+            </div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;border-top:2px solid var(--vert)">
+              <div style="font-family:var(--police-titre);font-size:2.8rem;color:var(--vert);font-weight:700;line-height:1">50+</div>
+              <div style="font-size:.78rem;color:var(--texte3);margin-top:.4rem">Clients</div>
+            </div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;border-top:2px solid var(--vert)">
+              <div style="font-family:var(--police-titre);font-size:2.8rem;color:var(--vert);font-weight:700;line-height:1">12</div>
+              <div style="font-size:.78rem;color:var(--texte3);margin-top:.4rem">Experts</div>
+            </div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;border-top:2px solid var(--vert)">
+              <div style="font-family:var(--police-titre);font-size:2.8rem;color:var(--vert);font-weight:700;line-height:1">5</div>
+              <div style="font-size:.78rem;color:var(--texte3);margin-top:.4rem">Années</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valeurs -->
+  <section class="section fond-surface" aria-labelledby="h-val">
+    <div class="conteneur">
+      <div class="entete">
+        <div class="puce">Ce qui nous guide</div>
+        <h2 id="h-val">Nos valeurs</h2>
+      </div>
+      <div class="g4">
+        <article class="carte-svc reveal">
+          <div class="svc-icone" aria-hidden="true">🎯</div>
+          <h3>Excellence</h3>
+          <p>Perfection à chaque ligne de code et chaque pixel de design.</p>
+        </article>
+        <article class="carte-svc reveal" style="transition-delay:.1s">
+          <div class="svc-icone" aria-hidden="true">🤝</div>
+          <h3>Transparence</h3>
+          <p>Communication ouverte, délais respectés, budget maîtrisé.</p>
+        </article>
+        <article class="carte-svc reveal" style="transition-delay:.2s">
+          <div class="svc-icone" aria-hidden="true">🚀</div>
+          <h3>Innovation</h3>
+          <p>Les meilleures technologies pour des solutions pérennes.</p>
+        </article>
+        <article class="carte-svc reveal" style="transition-delay:.3s">
+          <div class="svc-icone" aria-hidden="true">♿</div>
+          <h3>Accessibilité</h3>
+          <p>Standards WCAG respectés. Un web inclusif pour tous.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ ÉQUIPE — figure + figcaption ══════ -->
+  <section class="section" aria-labelledby="h-equipe">
+    <div class="conteneur">
+      <div class="entete">
+        <div class="puce">Les visages derrière Nexora</div>
+        <h2 id="h-equipe">Notre équipe</h2>
+        <p>Des experts passionnés qui mettent leur talent au service de vos projets.</p>
+      </div>
+      <div class="g4">
+
+        <article class="carte-membre reveal" aria-labelledby="m1">
+          <!--
+            <figure> = regroupe l'image ET sa légende.
+            <figcaption> = légende de la figure.
+            Balises sémantiques HTML5 obligatoires.
+          -->
+          <figure>
+            <div class="photo-m" role="img" aria-label="Karim Bensouda — Co-fondateur">
+              <div class="grille-pt" aria-hidden="true"></div>
+              <span>KB</span>
+            </div>
+            <figcaption>
+              <p class="m-nom" id="m1">Karim Bensouda</p>
+              <p class="m-poste">Co-fondateur &amp; CTO</p>
+              <p class="m-bio">Expert React et Node.js. 8 ans d'expérience en architecture cloud.</p>
+              <div class="m-liens">
+                <a href="#" class="m-lien" aria-label="LinkedIn de Karim" target="_blank" rel="noopener">💼</a>
+                <a href="#" class="m-lien" aria-label="GitHub de Karim"   target="_blank" rel="noopener">💻</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="carte-membre reveal" style="transition-delay:.1s" aria-labelledby="m2">
+          <figure>
+            <div class="photo-m" role="img" aria-label="Sara Alaoui — Lead Designer">
+              <div class="grille-pt" aria-hidden="true"></div>
+              <span>SA</span>
+            </div>
+            <figcaption>
+              <p class="m-nom" id="m2">Sara Alaoui</p>
+              <p class="m-poste">Lead Designer UI/UX</p>
+              <p class="m-bio">Figma &amp; Design Systems. Championne de l'accessibilité WCAG.</p>
+              <div class="m-liens">
+                <a href="#" class="m-lien" aria-label="LinkedIn de Sara"  target="_blank" rel="noopener">💼</a>
+                <a href="#" class="m-lien" aria-label="Behance de Sara"   target="_blank" rel="noopener">🎨</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="carte-membre reveal" style="transition-delay:.2s" aria-labelledby="m3">
+          <figure>
+            <div class="photo-m" role="img" aria-label="Youssef El Khatib — Dev Mobile">
+              <div class="grille-pt" aria-hidden="true"></div>
+              <span>YK</span>
+            </div>
+            <figcaption>
+              <p class="m-nom" id="m3">Youssef El Khatib</p>
+              <p class="m-poste">Développeur Mobile</p>
+              <p class="m-bio">React Native &amp; Flutter. 50+ apps publiées sur App Store et Play.</p>
+              <div class="m-liens">
+                <a href="#" class="m-lien" aria-label="LinkedIn de Youssef" target="_blank" rel="noopener">💼</a>
+                <a href="#" class="m-lien" aria-label="GitHub de Youssef"   target="_blank" rel="noopener">💻</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="carte-membre reveal" style="transition-delay:.3s" aria-labelledby="m4">
+          <figure>
+            <div class="photo-m" role="img" aria-label="Hind Tazi — Chef de projet">
+              <div class="grille-pt" aria-hidden="true"></div>
+              <span>HT</span>
+            </div>
+            <figcaption>
+              <p class="m-nom" id="m4">Hind Tazi</p>
+              <p class="m-poste">Chef de projet &amp; Scrum Master</p>
+              <p class="m-bio">Certifiée PMP. Garantit la livraison dans les délais et le budget.</p>
+              <div class="m-liens">
+                <a href="#" class="m-lien" aria-label="LinkedIn de Hind" target="_blank" rel="noopener">💼</a>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grille">
+    <div class="footer-marque">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <p>Agence digitale à Casablanca — web, mobile, cloud.</p>
+    </div>
+    <nav class="footer-col" aria-label="Plan du site">
+      <h4>Plan du site</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Développement Web</a></li>
+        <li><a href="services.html">Applications Mobiles</a></li>
+        <li><a href="services.html">Cloud &amp; DevOps</a></li>
+        <li><a href="services.html">Data &amp; Analytics</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Confidentialité</a></li>
+        <li><a href="#">CGU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bas">
+    <p>© 2025 Nexora · TP3 HTML5 &amp; CSS3 · Nada Elhattab · ENSET</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="#">Mentions légales</a>
+      <a href="../index.html">← Retour TPs</a>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

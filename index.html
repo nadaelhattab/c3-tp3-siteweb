@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora — Agence Digitale · Web · Mobile · Cloud</title>
+  <meta name="description" content="Nexora est une agence digitale marocaine spécialisée en création web, applications mobiles et solutions cloud sur mesure.">
+  <meta name="keywords" content="agence digitale, création web, développement, cloud, Maroc, Casablanca">
+  <meta property="og:title"       content="Nexora — Agence Digitale">
+  <meta property="og:description" content="Web · Mobile · Cloud — Solutions digitales sur mesure.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://c3-na-elhattab.enset.ma/tp3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main" class="skip">Aller au contenu</a>
+
+<!-- ══════ NAVIGATION ══════ -->
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav-interieur">
+      <a href="index.html" class="logo" aria-label="Nexora — Accueil">Nexora<span>.</span></a>
+      <div class="nav-liens">
+        <a href="index.html" class="actif" aria-current="page">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-nav">Devis gratuit</a>
+      </div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-m">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-m" aria-label="Menu mobile">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ══════ HERO ══════ -->
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="hero-orbe orbe-1" aria-hidden="true"></div>
+    <div class="hero-orbe orbe-2" aria-hidden="true"></div>
+    <div class="hero-contenu">
+      <div class="puce anim">🚀 &nbsp;Agence Digitale · Maroc</div>
+      <h1 id="h-hero" class="anim anim-1">
+        Votre vision,<br>notre <em>expertise</em> digitale
+      </h1>
+      <p class="anim anim-2">
+        Nexora accompagne les entreprises dans leur transformation numérique —
+        de la conception à la livraison, avec passion et précision.
+      </p>
+      <div class="hero-actions anim anim-3">
+        <a href="services.html" class="btn btn-vert">Nos services</a>
+        <a href="contact.html"  class="btn btn-contour">Nous contacter</a>
+      </div>
+      <div class="hero-stats anim anim-4" aria-label="Chiffres clés">
+        <div class="stat">
+          <span class="stat-val">80+</span>
+          <span class="stat-lab">Projets livrés</span>
+        </div>
+        <div class="stat-sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-val">50+</span>
+          <span class="stat-lab">Clients</span>
+        </div>
+        <div class="stat-sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-val">5</span>
+          <span class="stat-lab">Années</span>
+        </div>
+        <div class="stat-sep" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-val">98%</span>
+          <span class="stat-lab">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ PRÉSENTATION ══════ -->
+  <section class="section fond-surface" aria-labelledby="h-pres">
+    <div class="conteneur">
+      <div class="g2" style="align-items:center;gap:4rem">
+        <div class="reveal">
+          <div class="puce">Qui sommes-nous</div>
+          <h2 id="h-pres">Une agence digitale<br>qui fait la différence</h2>
+          <p>Fondée en 2019 à Casablanca, <strong style="color:var(--blanc)">Nexora</strong> est composée de 12 experts passionnés qui créent des solutions web, mobile et cloud qui propulsent votre activité.</p>
+          <p>Chaque projet est unique. Nous le traitons comme tel.</p>
+          <a href="about.html" class="btn btn-surface" style="margin-top:1.25rem">Notre histoire →</a>
+        </div>
+        <div class="reveal" style="transition-delay:.15s">
+          <!-- Bloc visuel décoratif en CSS pur -->
+          <div style="
+            border:1px solid var(--border);
+            border-radius:var(--rayon-lg);
+            padding:2.5rem;
+            background:var(--noir2);
+            position:relative;
+            overflow:hidden;
+          ">
+            <!-- Fond grille de points -->
+            <div style="
+              position:absolute;inset:0;
+              background-image:radial-gradient(circle,var(--border) 1px,transparent 1px);
+              background-size:22px 22px;
+              opacity:.6;
+            " aria-hidden="true"></div>
+            <!-- Orbe vert -->
+            <div style="
+              position:absolute;top:-40px;right:-40px;
+              width:200px;height:200px;border-radius:50%;
+              background:radial-gradient(circle,rgba(0,200,150,.12),transparent 70%);
+              filter:blur(40px);
+            " aria-hidden="true"></div>
+            <div style="position:relative;z-index:1">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;text-align:center">
+                  <div style="font-family:var(--police-titre);font-size:2.2rem;color:var(--vert);font-weight:700;line-height:1">80+</div>
+                  <div style="font-size:.75rem;color:var(--texte3);margin-top:.4rem">Projets</div>
+                </div>
+                <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;text-align:center">
+                  <div style="font-family:var(--police-titre);font-size:2.2rem;color:var(--vert);font-weight:700;line-height:1">12</div>
+                  <div style="font-size:.75rem;color:var(--texte3);margin-top:.4rem">Experts</div>
+                </div>
+                <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;text-align:center">
+                  <div style="font-family:var(--police-titre);font-size:2.2rem;color:var(--vert);font-weight:700;line-height:1">5</div>
+                  <div style="font-size:.75rem;color:var(--texte3);margin-top:.4rem">Années</div>
+                </div>
+                <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;text-align:center">
+                  <div style="font-family:var(--police-titre);font-size:2.2rem;color:var(--vert);font-weight:700;line-height:1">98%</div>
+                  <div style="font-size:.75rem;color:var(--texte3);margin-top:.4rem">Satisfaction</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ SERVICES ══════ -->
+  <section class="section" aria-labelledby="h-svc">
+    <div class="conteneur">
+      <div class="entete">
+        <div class="puce">Ce que nous faisons</div>
+        <h2 id="h-svc">Nos expertises</h2>
+        <p>Des solutions digitales complètes, de la stratégie à la livraison.</p>
+      </div>
+      <div class="g4">
+        <article class="carte-svc reveal">
+          <div class="svc-icone" aria-hidden="true">🌐</div>
+          <h3>Développement Web</h3>
+          <p>Sites vitrines, e-commerce et applications web modernes et accessibles.</p>
+          <a href="services.html" class="svc-lien">Voir →</a>
+        </article>
+        <article class="carte-svc reveal" style="transition-delay:.1s">
+          <div class="svc-icone" aria-hidden="true">📱</div>
+          <h3>Applications Mobiles</h3>
+          <p>Apps iOS et Android natives ou cross-platform, fluides et performantes.</p>
+          <a href="services.html" class="svc-lien">Voir →</a>
+        </article>
+        <article class="carte-svc reveal" style="transition-delay:.2s">
+          <div class="svc-icone" aria-hidden="true">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <p>Infrastructure scalable, pipelines CI/CD et migration cloud automatisée.</p>
+          <a href="services.html" class="svc-lien">Voir →</a>
+        </article>
+        <article class="carte-svc reveal" style="transition-delay:.3s">
+          <div class="svc-icone" aria-hidden="true">📊</div>
+          <h3>Data & Analytics</h3>
+          <p>Pipelines de données, dashboards interactifs et intelligence décisionnelle.</p>
+          <a href="services.html" class="svc-lien">Voir →</a>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="services.html" class="btn btn-vert">Tous les services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ VIDÉO ══════ -->
+  <section class="section-video" aria-labelledby="h-video">
+    <div class="video-grille">
+      <div class="reveal">
+        <div class="puce">Notre approche</div>
+        <h2 id="h-video">De l'idée au<br>déploiement</h2>
+        <p>Notre processus agile garantit une livraison de qualité dans les délais et le budget convenus.</p>
+        <p>Découverte → Design → Développement → Tests → Déploiement → Maintenance.</p>
+        <a href="about.html" class="btn btn-vert" style="margin-top:1.5rem">Notre méthodologie</a>
+      </div>
+      <div class="reveal" style="transition-delay:.15s">
+        <div class="video-enveloppe">
+          <!--
+            <video> HTML5 avec :
+            autoplay  = démarre automatiquement
+            muted     = sans son (requis pour autoplay)
+            loop      = boucle infinie
+            playsinline = inline sur iOS
+          -->
+          <video
+            autoplay muted loop playsinline
+            aria-label="Vidéo de présentation de Nexora"
+            title="Nexora — Notre processus"
+          >
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <track kind="captions" srclang="fr" label="Français">
+            <p>Votre navigateur ne supporte pas la vidéo HTML5.
+              <a href="about.html">En savoir plus</a>.</p>
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ TÉMOIGNAGES ══════ -->
+  <section class="section fond-surface" aria-labelledby="h-temo">
+    <div class="conteneur">
+      <div class="entete">
+        <div class="puce">Ils nous font confiance</div>
+        <h2 id="h-temo">Ce que disent nos clients</h2>
+      </div>
+      <div class="g3">
+        <article class="temo reveal">
+          <div class="etoiles" aria-label="5 étoiles">★★★★★</div>
+          <blockquote>
+            <p class="temo-texte">« Nexora a transformé notre présence en ligne. Notre e-commerce a vu ses ventes augmenter de 40% en 3 mois. Équipe réactive et professionnelle. »</p>
+          </blockquote>
+          <div class="temo-auteur">
+            <div class="temo-ini" aria-hidden="true">FB</div>
+            <div>
+              <cite class="temo-nom">Fatima Benali</cite>
+              <p class="temo-poste">Directrice, Boutique Chérifienne</p>
+            </div>
+          </div>
+        </article>
+        <article class="temo reveal" style="transition-delay:.1s">
+          <div class="etoiles" aria-label="5 étoiles">★★★★★</div>
+          <blockquote>
+            <p class="temo-texte">« Notre application mobile livrée en avance sur le planning. Code propre et maintenable. Je recommande Nexora à 100%. »</p>
+          </blockquote>
+          <div class="temo-auteur">
+            <div class="temo-ini" aria-hidden="true">YA</div>
+            <div>
+              <cite class="temo-nom">Youssef Alami</cite>
+              <p class="temo-poste">CEO, LogiMaroc</p>
+            </div>
+          </div>
+        </article>
+        <article class="temo reveal" style="transition-delay:.2s">
+          <div class="etoiles" aria-label="4 étoiles">★★★★☆</div>
+          <blockquote>
+            <p class="temo-texte">« L'intégration cloud a réduit nos coûts d'infrastructure de 60%. Excellent rapport qualité/prix. »</p>
+          </blockquote>
+          <div class="temo-auteur">
+            <div class="temo-ini" aria-hidden="true">SE</div>
+            <div>
+              <cite class="temo-nom">Sara El Fassi</cite>
+              <p class="temo-poste">DSI, FinTech Maroc</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ CTA ══════ -->
+  <section class="section" style="text-align:center" aria-labelledby="h-cta">
+    <div class="conteneur">
+      <div class="puce" style="margin:0 auto 1rem">Prêt à démarrer ?</div>
+      <h2 id="h-cta">Donnons vie à votre projet</h2>
+      <p style="max-width:460px;margin:.75rem auto 2rem;font-size:1.05rem">
+        Contactez-nous pour un devis gratuit et personnalisé, sans engagement.
+      </p>
+      <a href="contact.html" class="btn btn-vert">Démarrer un projet</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════ FOOTER ══════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-grille">
+    <div class="footer-marque">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <p>Agence digitale basée à Casablanca, spécialisée en développement web, applications mobiles et solutions cloud.</p>
+    </div>
+    <nav class="footer-col" aria-label="Plan du site">
+      <h4>Plan du site</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Développement Web</a></li>
+        <li><a href="services.html">Applications Mobiles</a></li>
+        <li><a href="services.html">Cloud & DevOps</a></li>
+        <li><a href="services.html">Data & Analytics</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@nexora.ma">hello@nexora.ma</a></li>
+        <li><a href="tel:+212522000000">+212 522 00 00 00</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bas">
+    <p>© 2025 Nexora · TP3 HTML5 &amp; CSS3 · Nada Elhattab · ENSET</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="../index.html">← Retour TPs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

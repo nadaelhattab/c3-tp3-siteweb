@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Nexora Agence Digitale</title>
+  <meta name="description" content="Portfolio de réalisations Nexora : web, mobile, UI/UX, data.">
+  <meta property="og:title"       content="Galerie — Nexora">
+  <meta property="og:description" content="Nos réalisations : web, mobile, UI/UX, data.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://c3-na-elhattab.enset.ma/tp3/gallery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip">Aller au contenu</a>
+
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav-interieur">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <div class="nav-liens">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="actif" aria-current="page">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-nav">Devis gratuit</a>
+      </div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-m">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-m" aria-label="Menu mobile">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero-page" aria-labelledby="h-page">
+    <nav class="fil" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a> <span aria-hidden="true">/</span>
+      <span aria-current="page">Galerie</span>
+    </nav>
+    <div class="puce" style="margin:0 auto .75rem">Notre portfolio</div>
+    <h1 id="h-page">Nos Réalisations</h1>
+    <p>Projets web, mobile et data réalisés pour nos clients.</p>
+  </section>
+
+  <section class="section" aria-labelledby="h-gal">
+    <div class="conteneur">
+      <h2 id="h-gal" class="sr-only">Galerie de projets</h2>
+
+      <!-- Filtres -->
+      <div class="filtres" role="group" aria-label="Filtrer par catégorie">
+        <button class="btn-f actif" data-f="tous"   aria-pressed="true">Tous</button>
+        <button class="btn-f"       data-f="web"    aria-pressed="false">🌐 Web</button>
+        <button class="btn-f"       data-f="mobile" aria-pressed="false">📱 Mobile</button>
+        <button class="btn-f"       data-f="ui"     aria-pressed="false">🎨 UI/UX</button>
+        <button class="btn-f"       data-f="data"   aria-pressed="false">📊 Data</button>
+      </div>
+
+      <!-- ══════ GALERIE — picture + srcset + loading="lazy" ══════ -->
+      <div class="grille-galerie" id="galerie">
+
+        <!-- Item 1 -->
+        <figure class="item-galerie reveal" data-cat="web" aria-labelledby="c1">
+          <!--
+            <picture> = image responsive selon l'écran.
+            <source media="..."> = condition d'affichage.
+            srcset = image à utiliser + sa largeur.
+            loading="lazy" = chargement différé (performance).
+            alt = description obligatoire pour l'accessibilité.
+          -->
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80 800w,
+                      https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=80 1200w"
+              sizes="(max-width:640px) 100vw, 33vw">
+            <source media="(min-width:500px)"
+              srcset="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80">
+            <img
+              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&q=75"
+              alt="Site e-commerce Boutique Chérifienne — catalogue produits responsive sur mobile et desktop"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c1">Boutique Chérifienne</span>
+            <span class="cap-cat">E-commerce · React + Node.js</span>
+          </div>
+        </figure>
+
+        <!-- Item 2 -->
+        <figure class="item-galerie reveal" data-cat="mobile" style="transition-delay:.05s" aria-labelledby="c2">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=75"
+              alt="Application mobile LogiMaroc — tableau de bord de suivi de livraisons en temps réel"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c2">LogiMaroc</span>
+            <span class="cap-cat">App Mobile · React Native</span>
+          </div>
+        </figure>
+
+        <!-- Item 3 -->
+        <figure class="item-galerie reveal" data-cat="data" style="transition-delay:.1s" aria-labelledby="c3">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75"
+              alt="Dashboard analytics Riad Prestige — graphiques de fréquentation et revenus hôteliers"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c3">Riad Prestige Analytics</span>
+            <span class="cap-cat">Dashboard · Python &amp; Streamlit</span>
+          </div>
+        </figure>
+
+        <!-- Item 4 -->
+        <figure class="item-galerie reveal" data-cat="web" style="transition-delay:.15s" aria-labelledby="c4">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75"
+              alt="Plateforme FinTech Maroc — interface de paiement et suivi de transactions en ligne"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c4">FinTech Maroc</span>
+            <span class="cap-cat">Plateforme · Next.js</span>
+          </div>
+        </figure>
+
+        <!-- Item 5 -->
+        <figure class="item-galerie reveal" data-cat="ui" style="transition-delay:.2s" aria-labelledby="c5">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&q=75"
+              alt="Design system HealthCare Plus — bibliothèque de composants UI accessibles pour applications médicales"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c5">HealthCare+ Design System</span>
+            <span class="cap-cat">UI/UX · Figma</span>
+          </div>
+        </figure>
+
+        <!-- Item 6 -->
+        <figure class="item-galerie reveal" data-cat="mobile" style="transition-delay:.25s" aria-labelledby="c6">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=400&q=75"
+              alt="Application EduLearn — plateforme de formation en ligne avec cours vidéo et quiz interactifs"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c6">EduLearn</span>
+            <span class="cap-cat">App Formation · Flutter</span>
+          </div>
+        </figure>
+
+        <!-- Item 7 -->
+        <figure class="item-galerie reveal" data-cat="web" style="transition-delay:.3s" aria-labelledby="c7">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&q=75"
+              alt="Site vitrine AgriMaroc — page d'accueil avec hero image et présentation des services agricoles"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c7">AgriMaroc</span>
+            <span class="cap-cat">Site Vitrine · HTML5 CSS3</span>
+          </div>
+        </figure>
+
+        <!-- Item 8 -->
+        <figure class="item-galerie reveal" data-cat="data" style="transition-delay:.35s" aria-labelledby="c8">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=75"
+              alt="Pipeline de données SRM — analyse de contrats électricité avec Python et visualisations interactives"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c8">SRM Data Pipeline</span>
+            <span class="cap-cat">Data Engineering · Python</span>
+          </div>
+        </figure>
+
+        <!-- Item 9 -->
+        <figure class="item-galerie reveal" data-cat="ui" style="transition-delay:.4s" aria-labelledby="c9">
+          <picture>
+            <source media="(min-width:900px)"
+              srcset="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80 800w"
+              sizes="33vw">
+            <img
+              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=75"
+              alt="Interface UX TravelMa — application de réservation de voyages avec carte interactive et filtres"
+              loading="lazy"
+              width="400" height="250">
+          </picture>
+          <div class="cap">
+            <span class="cap-titre" id="c9">TravelMa</span>
+            <span class="cap-cat">UI/UX · Figma + React</span>
+          </div>
+        </figure>
+
+      </div><!-- fin galerie -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grille">
+    <div class="footer-marque">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <p>Agence digitale à Casablanca — web, mobile, cloud.</p>
+    </div>
+    <nav class="footer-col" aria-label="Plan du site">
+      <h4>Plan du site</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Développement Web</a></li>
+        <li><a href="services.html">Applications Mobiles</a></li>
+        <li><a href="services.html">Cloud &amp; DevOps</a></li>
+        <li><a href="services.html">Data &amp; Analytics</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Confidentialité</a></li>
+        <li><a href="#">CGU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bas">
+    <p>© 2025 Nexora · TP3 HTML5 &amp; CSS3 · Nada Elhattab · ENSET</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="#">Mentions légales</a>
+      <a href="../index.html">← Retour TPs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  /* Filtre galerie */
+  const btns  = document.querySelectorAll('.btn-f');
+  const items = document.querySelectorAll('.item-galerie');
+  btns.forEach(b => b.addEventListener('click', () => {
+    btns.forEach(x => { x.classList.remove('actif'); x.setAttribute('aria-pressed','false'); });
+    b.classList.add('actif'); b.setAttribute('aria-pressed','true');
+    const f = b.dataset.f;
+    items.forEach(i => { i.style.display = (f==='tous'||i.dataset.cat===f)?'':'none'; });
+  }));
+</script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Nexora Agence Digitale</title>
+  <meta name="description" content="Tous les services Nexora : développement web, mobile, cloud, data, SEO. Tarifs transparents.">
+  <meta property="og:title"       content="Services — Nexora">
+  <meta property="og:description" content="Web, mobile, cloud, data — tarifs transparents.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://c3-na-elhattab.enset.ma/tp3/services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip">Aller au contenu</a>
+
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav-interieur">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <div class="nav-liens">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html" class="actif" aria-current="page">Services</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-nav">Devis gratuit</a>
+      </div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-m">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-m" aria-label="Menu mobile">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero-page" aria-labelledby="h-page">
+    <nav class="fil" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a> <span aria-hidden="true">/</span>
+      <span aria-current="page">Services</span>
+    </nav>
+    <div class="puce" style="margin:0 auto .75rem">Ce que nous faisons</div>
+    <h1 id="h-page">Nos Services</h1>
+    <p>Solutions digitales complètes pour transformer votre entreprise.</p>
+  </section>
+
+  <!-- ══════ SERVICES — details/summary ══════ -->
+  <section class="section" aria-labelledby="h-svc">
+    <div class="conteneur">
+      <div class="entete">
+        <h2 id="h-svc">Tous nos services</h2>
+        <p>Cliquez sur chaque service pour voir les détails.</p>
+      </div>
+
+      <!-- details[open] = ouvert par défaut -->
+      <details class="acc" open aria-labelledby="s1">
+        <summary id="s1">🌐 &nbsp;Développement Web</summary>
+        <div class="acc-corps">
+          <p>Sites web et applications web sur mesure, en utilisant les technologies les plus récentes : HTML5, CSS3, JavaScript moderne, React, Vue et Node.js.</p>
+          <ul>
+            <li>Sites vitrines responsive (HTML5, CSS3, JavaScript)</li>
+            <li>E-commerce (Next.js, Shopify, WooCommerce)</li>
+            <li>Applications web complexes (React, Vue, Angular)</li>
+            <li>API REST et GraphQL (Node.js, Laravel)</li>
+            <li>Optimisation Core Web Vitals et SEO technique</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc" aria-labelledby="s2">
+        <summary id="s2">📱 &nbsp;Applications Mobiles</summary>
+        <div class="acc-corps">
+          <p>Applications mobiles natives ou cross-platform offrant une expérience utilisateur fluide sur iOS et Android.</p>
+          <ul>
+            <li>React Native pour applications cross-platform</li>
+            <li>Flutter pour performances natives</li>
+            <li>Intégration Firebase, Stripe, Maps</li>
+            <li>Publication App Store &amp; Google Play</li>
+            <li>Maintenance et mises à jour continues</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc" aria-labelledby="s3">
+        <summary id="s3">☁️ &nbsp;Cloud &amp; DevOps</summary>
+        <div class="acc-corps">
+          <p>Migration vers le cloud et mise en place de pipelines CI/CD modernes pour accélérer vos cycles de livraison.</p>
+          <ul>
+            <li>Architecture cloud (AWS, Azure, GCP)</li>
+            <li>Docker et Kubernetes</li>
+            <li>CI/CD (GitHub Actions, GitLab CI)</li>
+            <li>Monitoring et observabilité (Datadog, Grafana)</li>
+            <li>Sécurité cloud et conformité RGPD</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc" aria-labelledby="s4">
+        <summary id="s4">📊 &nbsp;Data &amp; Analytics</summary>
+        <div class="acc-corps">
+          <p>Transformez vos données brutes en insights actionnables grâce à nos solutions de data engineering et visualisation.</p>
+          <ul>
+            <li>Pipelines ETL/ELT (Apache Spark, Airflow)</li>
+            <li>Dashboards interactifs (Power BI, Streamlit)</li>
+            <li>Data warehousing (BigQuery, Snowflake)</li>
+            <li>Machine Learning et modèles prédictifs</li>
+            <li>Rapports automatisés temps réel</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc" aria-labelledby="s5">
+        <summary id="s5">🔍 &nbsp;SEO &amp; Marketing Digital</summary>
+        <div class="acc-corps">
+          <p>Augmentez votre visibilité et attirez des clients qualifiés grâce à nos stratégies de référencement sur mesure.</p>
+          <ul>
+            <li>Audit SEO technique et sémantique</li>
+            <li>Stratégie de contenu et netlinking</li>
+            <li>Google Ads et Meta Ads</li>
+            <li>Analytics (GA4, Looker Studio)</li>
+            <li>Email marketing et automation</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc" aria-labelledby="s6">
+        <summary id="s6">🎨 &nbsp;Design UI/UX</summary>
+        <div class="acc-corps">
+          <p>Interfaces digitales esthétiques et fonctionnelles, centrées sur l'expérience utilisateur et l'accessibilité.</p>
+          <ul>
+            <li>Research UX et personas</li>
+            <li>Wireframing et prototypage (Figma)</li>
+            <li>Design system et composants réutilisables</li>
+            <li>Tests utilisateurs et itérations</li>
+            <li>Conformité WCAG 2.1 AA</li>
+          </ul>
+        </div>
+      </details>
+
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="contact.html" class="btn btn-vert">Demander un devis gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ TABLEAU DE TARIFS — colspan + rowspan ══════ -->
+  <section class="section fond-surface" aria-labelledby="h-tarifs">
+    <div class="conteneur">
+      <div class="entete">
+        <div class="puce">Transparence</div>
+        <h2 id="h-tarifs">Nos tarifs</h2>
+        <p>Packages clairs et adaptés à toutes les tailles d'entreprise.</p>
+      </div>
+      <div class="tableau-wrap">
+        <table aria-label="Tableau comparatif des tarifs Nexora">
+          <caption style="caption-side:top;padding:.9rem 1.25rem;text-align:left;font-size:.82rem;color:var(--texte3);border-bottom:1px solid var(--border)">
+            Comparatif des offres — Tarifs HT en MAD
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col" style="text-align:left">Prestation</th>
+              <th scope="col">Starter</th>
+              <th scope="col">Pro <span class="pop">★</span></th>
+              <th scope="col">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Site vitrine</th>
+              <td>5 000 – 10 000</td>
+              <td>15 000 – 25 000</td>
+              <td>Sur devis</td>
+            </tr>
+            <tr>
+              <th scope="row">E-commerce</th>
+              <td>20 000</td>
+              <td>40 000</td>
+              <td>Sur devis</td>
+            </tr>
+            <tr>
+              <th scope="row">Application mobile</th>
+              <td class="non">✗</td>
+              <td>50 000</td>
+              <td class="oui">✓ Inclus</td>
+            </tr>
+            <!-- rowspan="2" = cette cellule couvre 2 lignes -->
+            <tr>
+              <th scope="row" rowspan="2">Maintenance &amp; Support</th>
+              <td>3 600 / an</td>
+              <td>6 000 / an</td>
+              <td>Sur devis</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>Email + Tel</td>
+              <td>24/7</td>
+            </tr>
+            <tr>
+              <th scope="row">SEO inclus</th>
+              <td class="oui">✓ Basique</td>
+              <td class="oui">✓ Avancé</td>
+              <td class="oui">✓ Premium</td>
+            </tr>
+            <!-- colspan="3" = cette cellule couvre 3 colonnes -->
+            <tr style="background:var(--vert-glow)">
+              <th scope="row" style="color:var(--vert)">💡 Devis sur mesure</th>
+              <td colspan="3" style="color:var(--vert);font-weight:600;text-align:center">
+                Chaque projet est unique — <a href="contact.html" style="color:var(--vert);text-decoration:underline">contactez-nous</a> pour un devis personnalisé.
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Tarifs en MAD HT. TVA 20% applicable. Devis gratuit sans engagement.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <a href="contact.html" class="btn btn-vert">Obtenir un devis</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grille">
+    <div class="footer-marque">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <p>Agence digitale à Casablanca — web, mobile, cloud.</p>
+    </div>
+    <nav class="footer-col" aria-label="Plan du site">
+      <h4>Plan du site</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Développement Web</a></li>
+        <li><a href="services.html">Applications Mobiles</a></li>
+        <li><a href="services.html">Cloud &amp; DevOps</a></li>
+        <li><a href="services.html">Data &amp; Analytics</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Confidentialité</a></li>
+        <li><a href="#">CGU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bas">
+    <p>© 2025 Nexora · TP3 HTML5 &amp; CSS3 · Nada Elhattab · ENSET</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="#">Mentions légales</a>
+      <a href="../index.html">← Retour TPs</a>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

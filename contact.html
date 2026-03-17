@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nexora Agence Digitale</title>
+  <meta name="description" content="Contactez Nexora pour votre projet digital. Devis gratuit en 24h.">
+  <meta property="og:title"       content="Contact — Nexora">
+  <meta property="og:description" content="Devis gratuit en 24h.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://c3-na-elhattab.enset.ma/tp3/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip">Aller au contenu</a>
+
+<header>
+  <nav class="nav" aria-label="Navigation principale">
+    <div class="nav-interieur">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <div class="nav-liens">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html" class="actif" aria-current="page">Contact</a>
+        <a href="contact.html" class="btn-nav">Devis gratuit</a>
+      </div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-m">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-m" aria-label="Menu mobile">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero-page" aria-labelledby="h-page">
+    <nav class="fil" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a> <span aria-hidden="true">/</span>
+      <span aria-current="page">Contact</span>
+    </nav>
+    <div class="puce" style="margin:0 auto .75rem">Parlons de votre projet</div>
+    <h1 id="h-page">Contactez-nous</h1>
+    <p>Réponse garantie en 24h ouvrées. Devis gratuit et sans engagement.</p>
+  </section>
+
+  <section class="section" aria-labelledby="h-contact">
+    <div class="conteneur">
+      <h2 id="h-contact" style="clip:rect(0 0 0 0);position:absolute;width:1px;height:1px;overflow:hidden">Formulaire de contact et informations</h2>
+
+      <div class="g2" style="gap:3.5rem;align-items:start">
+
+        <!-- ══════ FORMULAIRE COMPLET ══════ -->
+        <div id="form-zone">
+          <div class="form-card">
+            <h3>Envoyez-nous un message</h3>
+            <p>Les champs <span style="color:var(--rouge)">*</span> sont obligatoires.</p>
+
+            <form id="form-contact" action="" method="post" novalidate
+                  aria-label="Formulaire de contact Nexora"
+                  style="margin-top:1.5rem">
+              <div class="grille-champs">
+
+                <!-- type="text" — Nom -->
+                <div class="champ">
+                  <label for="nom">Nom <span class="req" aria-label="obligatoire">*</span></label>
+                  <input type="text" id="nom" name="nom"
+                    placeholder="El Amrani" required minlength="2"
+                    autocomplete="family-name" aria-required="true">
+                </div>
+
+                <!-- type="text" — Prénom -->
+                <div class="champ">
+                  <label for="prenom">Prénom <span class="req" aria-label="obligatoire">*</span></label>
+                  <input type="text" id="prenom" name="prenom"
+                    placeholder="Karim" required minlength="2"
+                    autocomplete="given-name" aria-required="true">
+                </div>
+
+                <!-- type="email" — Email -->
+                <div class="champ">
+                  <label for="email">Email <span class="req" aria-label="obligatoire">*</span></label>
+                  <input type="email" id="email" name="email"
+                    placeholder="karim@exemple.ma" required
+                    autocomplete="email" aria-required="true">
+                </div>
+
+                <!-- type="tel" — Téléphone -->
+                <div class="champ">
+                  <label for="tel">Téléphone</label>
+                  <input type="tel" id="tel" name="telephone"
+                    placeholder="06 12 34 56 78"
+                    pattern="^(0[67][0-9]{8}|\+212[5-7][0-9]{8})$"
+                    autocomplete="tel" aria-describedby="tel-aide">
+                  <span class="aide" id="tel-aide">Format : 06XXXXXXXX</span>
+                </div>
+
+                <!-- type="date" — Date rappel -->
+                <div class="champ">
+                  <label for="date-rappel">Date de rappel souhaitée</label>
+                  <input type="date" id="date-rappel" name="date-rappel"
+                    autocomplete="off">
+                </div>
+
+                <!-- select — Service -->
+                <div class="champ">
+                  <label for="service">Service souhaité <span class="req" aria-label="obligatoire">*</span></label>
+                  <select id="service" name="service" required aria-required="true">
+                    <option value="" disabled selected>Choisissez un service</option>
+                    <option value="web">🌐 Développement Web</option>
+                    <option value="mobile">📱 Application Mobile</option>
+                    <option value="cloud">☁️ Cloud &amp; DevOps</option>
+                    <option value="data">📊 Data &amp; Analytics</option>
+                    <option value="seo">🔍 SEO &amp; Marketing</option>
+                    <option value="design">🎨 Design UI/UX</option>
+                    <option value="autre">💬 Autre</option>
+                  </select>
+                </div>
+
+                <!-- select — Budget -->
+                <div class="champ full">
+                  <label for="budget">Budget estimé</label>
+                  <select id="budget" name="budget">
+                    <option value="" disabled selected>Fourchette de budget</option>
+                    <option value="<10k">Moins de 10 000 MAD</option>
+                    <option value="10-30k">10 000 – 30 000 MAD</option>
+                    <option value="30-50k">30 000 – 50 000 MAD</option>
+                    <option value=">50k">Plus de 50 000 MAD</option>
+                    <option value="nsp">Je ne sais pas encore</option>
+                  </select>
+                </div>
+
+                <!-- radio — Comment nous avez-vous connu ? -->
+                <div class="champ full">
+                  <label as="p" style="margin-bottom:.5rem;font-size:.8rem;font-weight:600;color:var(--texte)">
+                    Comment nous avez-vous connu ?
+                  </label>
+                  <div class="groupe-choix" role="radiogroup" aria-label="Source">
+                    <label class="opt"><input type="radio" name="source" value="google"> Google</label>
+                    <label class="opt"><input type="radio" name="source" value="linkedin"> LinkedIn</label>
+                    <label class="opt"><input type="radio" name="source" value="bouche"> Bouche à oreille</label>
+                    <label class="opt"><input type="radio" name="source" value="reseaux"> Réseaux sociaux</label>
+                    <label class="opt"><input type="radio" name="source" value="autre"> Autre</label>
+                  </div>
+                </div>
+
+                <!-- checkbox — Technologies -->
+                <div class="champ full">
+                  <label as="p" style="margin-bottom:.5rem;font-size:.8rem;font-weight:600;color:var(--texte)">
+                    Technologies d'intérêt
+                  </label>
+                  <div class="groupe-choix" role="group" aria-label="Technologies">
+                    <label class="opt"><input type="checkbox" name="tech" value="react"> React</label>
+                    <label class="opt"><input type="checkbox" name="tech" value="node"> Node.js</label>
+                    <label class="opt"><input type="checkbox" name="tech" value="python"> Python</label>
+                    <label class="opt"><input type="checkbox" name="tech" value="aws"> AWS</label>
+                    <label class="opt"><input type="checkbox" name="tech" value="flutter"> Flutter</label>
+                  </div>
+                </div>
+
+                <!-- textarea — Message -->
+                <div class="champ full">
+                  <label for="message">Votre message <span class="req" aria-label="obligatoire">*</span></label>
+                  <textarea id="message" name="message" rows="5"
+                    maxlength="800" required
+                    placeholder="Décrivez votre projet, vos besoins, vos contraintes…"
+                    autocomplete="off" aria-required="true"
+                    aria-describedby="msg-count"></textarea>
+                  <span class="aide" id="msg-count"
+                        aria-live="polite" style="text-align:right">0 / 800</span>
+                </div>
+
+                <!-- type="file" — Pièce jointe -->
+                <div class="champ full">
+                  <label for="fichier">
+                    Pièce jointe
+                    <span style="font-weight:400;font-size:.72rem;color:var(--texte3)">
+                      (PDF, DOC, ZIP · max 5 Mo · optionnel)
+                    </span>
+                  </label>
+                  <input type="file" id="fichier" name="fichier"
+                    accept=".pdf,.doc,.docx,.zip,.ppt,.pptx"
+                    aria-describedby="fichier-aide">
+                  <span class="aide" id="fichier-aide">Brief, cahier des charges…</span>
+                </div>
+
+                <!-- checkbox — CGU (required) -->
+                <div class="champ full">
+                  <div class="cgu-ligne">
+                    <input type="checkbox" id="cgu" name="cgu" required aria-required="true">
+                    <label for="cgu">
+                      J'accepte que mes données soient traitées selon la
+                      <a href="#">politique de confidentialité</a> de Nexora.
+                      <strong>Obligatoire.</strong>
+                      <span class="req">*</span>
+                    </label>
+                  </div>
+                </div>
+
+              </div><!-- fin grille-champs -->
+
+              <button type="submit" class="btn-submit">
+                Envoyer le message →
+              </button>
+
+              <div class="msg-ok" id="msg-ok" role="alert" aria-live="assertive">
+                ✅ Message envoyé ! Nous vous répondrons dans les 24h ouvrées.
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- ══════ INFOS + CARTE MAPS ══════ -->
+        <div>
+          <h3 style="margin-bottom:1.5rem;font-size:1.3rem">Nos coordonnées</h3>
+
+          <div class="infos-contact" style="margin-bottom:2rem">
+            <div class="ligne-info">
+              <div class="ico-info" aria-hidden="true">📍</div>
+              <div>
+                <strong>Adresse</strong>
+                <p>123 Boulevard Mohammed V<br>Casablanca 20000, Maroc</p>
+              </div>
+            </div>
+            <div class="ligne-info">
+              <div class="ico-info" aria-hidden="true">📞</div>
+              <div>
+                <strong>Téléphone</strong>
+                <p><a href="tel:+212522000000">+212 522 00 00 00</a></p>
+              </div>
+            </div>
+            <div class="ligne-info">
+              <div class="ico-info" aria-hidden="true">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:hello@nexora.ma">hello@nexora.ma</a></p>
+              </div>
+            </div>
+            <div class="ligne-info">
+              <div class="ico-info" aria-hidden="true">🕐</div>
+              <div>
+                <strong>Horaires</strong>
+                <p>Lun–Ven : 9h – 18h<br>Sam : 9h – 13h</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ══ iframe Google Maps ══ -->
+          <div class="carte-maps">
+            <!--
+              <iframe> = fenêtre intégrée dans la page.
+              Ici on intègre Google Maps.
+              title = OBLIGATOIRE pour l'accessibilité.
+              loading="lazy" = chargement différé.
+            -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323!2d-7.6099!3d33.5928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sBoulevard%20Mohammed%20V%2C%20Casablanca!5e0!3m2!1sfr!2sma!4v1700000000000"
+              title="Localisation de Nexora — 123 Boulevard Mohammed V, Casablanca"
+              aria-label="Carte Google Maps de l'agence Nexora à Casablanca"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grille">
+    <div class="footer-marque">
+      <a href="index.html" class="logo">Nexora<span>.</span></a>
+      <p>Agence digitale à Casablanca — web, mobile, cloud.</p>
+    </div>
+    <nav class="footer-col" aria-label="Plan du site">
+      <h4>Plan du site</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Développement Web</a></li>
+        <li><a href="services.html">Applications Mobiles</a></li>
+        <li><a href="services.html">Cloud &amp; DevOps</a></li>
+        <li><a href="services.html">Data &amp; Analytics</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Confidentialité</a></li>
+        <li><a href="#">CGU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bas">
+    <p>© 2025 Nexora · TP3 HTML5 &amp; CSS3 · Nada Elhattab · ENSET</p>
+    <div style="display:flex;gap:1.5rem">
+      <a href="#">Mentions légales</a>
+      <a href="../index.html">← Retour TPs</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  /* Date min = aujourd'hui */
+  document.getElementById('date-rappel').min = new Date().toISOString().split('T')[0];
+
+  /* Compteur textarea */
+  const msg = document.getElementById('message');
+  const cpt = document.getElementById('msg-count');
+  msg.addEventListener('input', () => { cpt.textContent = msg.value.length + ' / 800'; });
+
+  /* Soumission */
+  document.getElementById('form-contact').addEventListener('submit', e => {
+    e.preventDefault();
+    if (e.target.checkValidity()) {
+      document.getElementById('form-zone').innerHTML =
+        '<div style="background:var(--vert-glow);border:1.5px solid rgba(0,200,150,.3);border-radius:16px;padding:3rem;text-align:center">' +
+        '<div style="font-size:3rem;margin-bottom:1rem">✅</div>' +
+        '<h3 style="margin-bottom:.5rem">Message envoyé !</h3>' +
+        '<p>Nous vous répondrons dans les 24h ouvrées.</p>' +
+        '</div>';
+    } else { e.target.reportValidity(); }
+  });
+</script>
+</body>
+</html>
